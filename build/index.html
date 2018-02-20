@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <!-- Задать кодировку документа -->
+	<meta charset="utf-8">	
+    <!-- Проинструктировать Internet Explorer использовать последний движок рендеринга -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<!-- Задать viewport для responsive дизайна -->	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Document Title  короче 55 символов-->
+
+	<title>Мишка</title>
+	<!-- Meta Description короче 150 символов -->
+    <meta name="description" content="">
+
+	<!-- Стандартный favicon можно положить в корень сайта -->
+	<!-- <link rel="icon" type="image/x-icon" href="https://example.com/favicon.ico"> -->
+	<!-- Рекомендованный формат favicon -->
+	<link rel="icon" type="image/png" href="https://example.com/favicon.png">
+	<!-- для IE -->
+	<!--  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	 
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"> -->
+
+	<!-- Помогает избежать проблем с дублированным контентом см link rel="canonical" href -->		
+    <!-- картинка  отражаемая при передачи ссылки в соц сетях -->
+	<meta property="og:image" content="path/to/image.jpg">
+
+	<!-- <link rel="manifest" href="site.webmanifest"> -->
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#468996">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#468996">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#468996">
+	<link rel="stylesheet" href="css/main.min.css">
+ 	<!-- <link rel="stylesheet" href="libs/animate.css"> -->
+	<!--  Критичный CSS (critical CSS) - CSS, задающий стили контента видимого сразу же пока идёт процесс загрузки страницы -->
+	<!-- <style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style> -->
+    
+</head>
+
+<body>
+
+	<header >
+		<div class="mobile-menu container__mob magictime swap">
+			<div class="mobile-menu__logo">
+			    <div class="mobile-menu__logo__mod"></div>
+			</div>
+			<div class="mobile-menu__close"></div>
+			<ul class="mobile-menu__list">
+				<li class="mobile-menu__list-item">	<a class="mobile-menu__list-item-link mobile-menu__list-item-link__width" href="catalog.html">Каталог товаров</a></li>
+				<li class="mobile-menu__list-item"><a class="mobile-menu__list-item-link mobile-menu__list-item-link__width" href="form.html">Вязание на заказ</a></li>
+				<li class="mobile-menu__list-item mobile-menu__list-search"><a class="mobile-menu__list-item-link mobile-menu__list-item-link__width" href="#">Поиск по сайту</a> </li>
+				<li class="mobile-menu__list-item mobile-menu__list-cart"><a class="mobile-menu__list-item-link mobile-menu__list-item-link__width" href="#">Корзина: <span>пока пуста</span></a></li>			
+			</ul>		
+		</div>
+
+		<div class="top-menu">
+			
+				<ul class="top-menu__nav container container-d">
+						<li class="top-menu__item top-menu__item__catalog hidden-t">
+							<a class="mobile-menu__list-item-link  mobile-menu__list-item-link__pad mobile-menu__list-item-link__marg" href="catalog.html">Каталог товаров</a>
+						</li>
+						<li class="top-menu__item  top-menu__item__form hidden-t ">
+							<a class="mobile-menu__list-item-link mobile-menu__list-item-link__pad" href="form.html">Вязание на заказ</a>
+						</li>
+
+					<li class="top-menu__logo mobile-menu__logo__mod mobile-menu__logo__mod-hov"></li>
+					<li class="top-menu__item top-menu__item-search hidden-m"><a class="mobile-menu__list-item-link" href="#"></a></li>
+					<li class="top-menu__item top-menu__item-cart hidden-m"><a class="mobile-menu__list-item-link " href="#">Корзина:<span>пока пуста</span></a></li>
+				</ul>			
+			<div class="top-menu__open"></div>
+		</div>	
+
+		</header>
+
+    <main>
+		<section class="product ">
+				<nav class="hidden-m container container-d">
+					<ul class="nav">
+						<li class="nav-item hidden-t">
+							<a class="" href="catalog.html">Новые поступления</a>
+						</li>
+						<li class="nav-item nav-item__sell hidden-t">
+							<a class="" href="catalog.html">Распродажа</a>
+						</li>
+						<li class="nav-item hidden-d">
+							<a class="" href="catalog.html">Каталог товаров</a>
+						</li>
+						<li class="nav-item hidden-d">
+							<a class="" href="form.html">Вязание на заказ</a>
+						</li>
+						<li class="nav-item__shipping">
+							<span class="">Бесплатная доставка по России</span>
+						</li>
+					</ul>
+				</nav>
+			<h2 class="product__title ">Милые штуки <br> ручной <br> работы для дома</h2>	
+			<ul class="product__list container container-d">
+				<li class="product__list-item "><a class="product__list-item-link" href="">Предметы интерьера</a></li>
+				<li class="product__list-item "><a class="product__list-item-link" href="">Детские игрушки</a></li>
+			</ul>
+		</section>
+
+
+		<section class="product-hit container">
+
+			<div class="product-hit__wrap-title">
+				<h3 class="product-hit__title">Вязаные корзинки</h3>
+				<span class="product-hit__time">ТОВАР НЕДЕЛИ</span>
+			</div>
+
+			<div class="product-hit__wrap-table">
+				<p class="product-hit__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+				<table class="product-hit__table">
+					<tr class="product-hit__table-tr">
+						<td  class="product-hit__table-td">Цвет:</td>
+						<td class="product-hit__table-tdR">«Тиффани»/серый</td>
+					</tr>
+					<tr  class="product-hit__table-tr">
+						<td class="product-hit__table-td">Диаметр:</td>
+						<td class="product-hit__table-tdR">25 см</td>
+					</tr>
+					<tr  class="product-hit__table-tr">
+						<td class="product-hit__table-td"> Высота:</td>
+						<td class="product-hit__table-tdR"> 15 см</td>
+					</tr>			
+				</table>
+			</div>
+		<!-- 	<img class="product-hit__img" src="img/triple-set-mobile.jpg" a>   -->
+			<div class="product-hit__img magictime"></div>
+
+			<div class="product-hit__wrap-price">
+				<span class="product-hit__price">Цена: 990 руб.</span>
+				<a class="product-hit__buy btn-hover " href="#">ЗАКАЗАТЬ</a>
+			</div>
+
+		</section>
+
+		<section class="border-wrap">
+			<div class="about container ">
+				<h3 class="about__title" >Коротко о нас:</h3>
+
+				<ul class="about__list">
+					<li class="about__list-item"> <div class="icon-1 about__list-item-i"></div><span class="about__list-item-text">Экологически  чистые материалы</span></li>
+					<li class="about__list-item"><div class="icon-3 about__list-item-i"></div><span class="about__list-item-text">Скандинавский стиль  по российской цене</span></li>
+					<li class="about__list-item"><div class="icon-5 about__list-item-i"></div><span class="about__list-item-text">Увеличивает лайки  на фотографиях</span></li>
+				</ul>
+
+				<ul class="about__list">
+					<li class="about__list-item"><div class="icon-2 about__list-item-i"></div><span class="about__list-item-text">Связано вручную с любовью и умилением</span></li>
+					<li class="about__list-item"><div class="icon-4  about__list-item-i"></div><span class="about__list-item-text">Поддержка отечественного <br> производителя</span></li>
+					<li class="about__list-item"><div class="icon-6 about__list-item-i"></div><span class="about__list-item-text">Поставляется в  подарочной упаковке</span></li>
+				</ul>
+
+			</div>
+			
+			<div class="reviews" >
+				<div class="reviews__container">
+						<h3 class="reviews__title">Отзывы</h3>
+						<div class="reviews__wrap">
+							<p class="reviews__text">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии,
+							я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
+							<span class="reviews__name">Анастасия Красильникова</span>
+							<span class="reviews__mail">@misssssiskras</span>
+
+							<div class="reviews__btn">
+								<div class="reviews__btn-left"></div>		
+								<div class="reviews__btn-right"></div>
+							</div>
+						</div>				
+						<a  class="reviews__link btn-hover" href="#">Написать</a>
+				</div>
+				
+			</div>
+			
+		</section>
+
+
+		<section class="contact">
+			
+			<div class="contact__wrap container">
+
+				<h3 class="contact__title">Контакты</h3>
+
+				<div class="contact__table">
+					<div class="contact__table-tr">
+							<div class="contact__table-td">e-mail:</div>	
+							<div class="contact__table-td"> <span class="contact__table-td-mail">info@mimimishkashop.ru</span>						</div> 
+					</div>
+					<div class="contact__table-tr">   
+							<div  class="contact__table-td">адрес:</div>
+							<div  class="contact__table-td contact__table-td-adress">г. Санкт-Петербург, <br>  ул. Большая Конюшенная, <br>д. 19/8, офис 101</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="contact__map container"></div>
+
+			<div class="container">
+			   <a class="contact__link btn-hover" href="#">напишите нам</a>
+			</div>	
+		</section>
+
+	</main>
+			
+			
+	<footer class="footer" >
+		    <div class="footer__logo hidden-m"></div>
+			<div class="footer__social container">
+				<div class="svg-insta "></div>
+				<div class="svg-fb "></div>
+				<div class="svg-twitter"></div>
+			</div>
+
+			<div class="footer__html">
+				<span >Разработано</span>
+			</div>
+
+
+	</footer>
+
+	
+
+
+
+
+
+
+
+
+	<script src="js/scripts.min.js"></script>
+ <!--    Google Analytics: change UA-XXXXX-Y to be your site's ID.  -->
+	<!-- <script>
+		window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+		ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+	</script>
+	<script src="https://www.google-analytics.com/analytics.js" async defer></script> -->
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <!-- Задать кодировку документа -->
+    <meta charset="utf-8">
+    <!-- Проинструктировать Internet Explorer использовать последний движок рендеринга -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Задать viewport для responsive дизайна -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Document Title  короче 55 символов-->
+
+    <title>Мишка</title>
+    <!-- Meta Description короче 150 символов -->
+    <meta name="description" content="">
+
+    <!-- Стандартный favicon можно положить в корень сайта -->
+    <!-- <link rel="icon" type="image/x-icon" href="https://example.com/favicon.ico"> -->
+    <!-- Рекомендованный формат favicon -->
+    <link rel="icon" type="image/png" href="https://example.com/favicon.png">
+    <!-- для IE -->
+    <!--  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	 
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"> -->
+
+    <!-- Помогает избежать проблем с дублированным контентом см link rel="canonical" href -->
+    <!-- картинка  отражаемая при передачи ссылки в соц сетях -->
+    <meta property="og:image" content="path/to/image.jpg">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#468996">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#468996">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#468996">
+    <link rel="stylesheet" href="css/main.min.css">
+    <!--  Критичный CSS (critical CSS) - CSS, задающий стили контента видимого сразу же пока идёт процесс загрузки страницы -->
+    <!-- <style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style> -->
+
+</head>
+
+<body>
+
+    <header>
+        <div class="mobile-menu container__mob">
+            <div class="mobile-menu__logo">
+                <div class="mobile-menu__logo__mod"></div>
+            </div>
+            <div class="mobile-menu__close"></div>
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__list-item">
+                    <a class="mobile-menu__list-item-link mobile-menu__list-item-link__width" href="catalog.html">Каталог товаров</a>
+                </li>
+                <li class="mobile-menu__list-item">
+                    <a class="mobile-menu__list-item-link mobile-menu__list-item-link__width" href="form.html">Вязание на заказ</a>
+                </li>
+                <li class="mobile-menu__list-item mobile-menu__list-search">
+                    <a class="mobile-menu__list-item-link mobile-menu__list-item-link__width" href="#">Поиск по сайту</a>
+                </li>
+                <li class="mobile-menu__list-item mobile-menu__list-cart">
+                    <a class="mobile-menu__list-item-link mobile-menu__list-item-link__width" href="#">Корзина:
+                        <span>пока пуста</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="top-menu">
+    
+            <ul class="top-menu__nav container container-d">
+                <li class="top-menu__item top-menu__item__catalog hidden-t">
+                    <a class="mobile-menu__list-item-link  mobile-menu__list-item-link__pad mobile-menu__list-item-link__marg" href="catalog.html">Каталог товаров</a>
+                </li>
+                <li class="top-menu__item  top-menu__item__form hidden-t ">
+                    <a class="mobile-menu__list-item-link mobile-menu__list-item-link__pad" href="form.html">Вязание на заказ</a>
+                </li>
+    
+                <li class="top-menu__logo mobile-menu__logo__mod mobile-menu__logo__mod-hov"></li>
+                <li class="top-menu__item top-menu__item-search hidden-m">
+                    <a class="mobile-menu__list-item-link" href="#"></a>
+                </li>
+                <li class="top-menu__item top-menu__item-cart hidden-m">
+                    <a class="mobile-menu__list-item-link " href="#">Корзина:
+                        <span>пока пуста</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="top-menu__open"></div>
+        </div>
+    
+    </header>
+    <main >
+        <div class="title">
+            <nav class="hidden-m container container-d">
+                <ul class="nav">
+                    <li class="nav-item hidden-t">
+                        <a class="" href="catalog.html">Новые поступления</a>
+                    </li>
+                    <li class="nav-item nav-item__sell hidden-t">
+                        <a class="" href="catalog.html">Распродажа</a>
+                    </li>
+                    <li class="nav-item hidden-d">
+                        <a class="" href="catalog.html">Каталог товаров</a>
+                    </li>
+                    <li class="nav-item hidden-d">
+                        <a class="" href="form.html">Вязание на заказ</a>
+                    </li>
+                    <li class="nav-item__shipping">
+                        <span class="">Бесплатная доставка по России</span>
+                    </li>
+                </ul>
+            </nav>
+            <h2 class="title__text" id="title_form"> Вязание на заказ</h2>       
+        </div>
+
+        <section class="form">
+            <p class="form__text">
+                 Мы будем рады воплотить в жизнь ваши пожелания! <br class="form__text__none">  Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.
+            </p>
+            <form  class="form__wrap" class="tools" action="">
+                <div class="tools tools__type">   
+                    <h3 class="tools__title tools__title__type">тип</h3>
+                    
+                    <input class="tools__type-item" id="type_1" type="radio" name="type" value="acsesyar" checked>    
+                    <label class="tools__type-label" for="type_1">Аксессуар для интерьера</label>     
+
+                     <input class="tools__type-item" id="type_2"type="radio" name="type" value="toy">
+                     <label class="tools__type-label" for="type_2">Детская игрушка</label>
+                </div>
+
+                <div class="tools tools__color">
+                    <div class="tools__color-wrap__mod">
+                    <h3 class="tools__title tools__title__color hidden-m">Цвет</h3>
+                    <ul class="tools__color-wrap">                        
+                        <li class="tools__color-wrap-item" >
+                            <input class="tools__color-item" type="checkbox" name="color" id="color_1" checked>
+                            <label class="tools__color-label"   for="color_1"> <span class="tools__color-label__btn" ></span> Белый</label>
+                        </li>
+                        <li class="tools__color-wrap-item">
+                            <input class="tools__color-item" type="checkbox" name="color" id="color_2">
+                            <label class="tools__color-label" for="color_2"> <span class="tools__color-label__btn"></span> Серый</label>
+                         </li>
+                        <li class="tools__color-wrap-item">                                
+                            <input class="tools__color-item"  type="checkbox" name="color" id="color_3">
+                            <label class="tools__color-label" for="color_3"><span class="tools__color-label__btn"></span> "Тиффани"</label>
+                        </li>  
+                        <li class="tools__color-wrap-item"> 
+                            <input class="tools__color-item" type="checkbox" name="color" id="color_4">
+                            <label class="tools__color-label" for="color_4"> <span class="tools__color-label__btn"></span>Черный</label>
+                        </li>
+                        <li class="tools__color-wrap-item">
+                            <input class="tools__color-item" type="checkbox" name="color" id="color_5">
+                            <label class="tools__color-label" for="color_5"> <span class="tools__color-label__btn"></span>Розовый</label> 
+                        </li>
+                        <li class="tools__color-wrap-item"> 
+                            <input class="tools__color-item" type="checkbox" name="color" id="color_6">
+                            <label class="tools__color-label" for="color_6"> <span class="tools__color-label__btn"></span> Оранжевый</label>     
+                        </li>
+                    </ul>  
+                    </div>
+                </div>
+                
+                <div class="tools tools__name">
+
+                    <h3 class="tools__title tools__title__name">фио</h3>
+
+                    <ul class="tools__name-wrap">
+                            <li class="tools__name-wrap-item">
+                                <label class="tools__name-label" for="name_1" >Фамилия:</label>
+                                <input class="tools__name-input"  type="text" name="surname" id="name_1" placeholder="Укажите фамилию">
+                            </li>
+                            <li class="tools__name-wrap-item">
+                                <label class="tools__name-label"  for="name_2">Имя:</label>
+                                <input class="tools__name-input" type="text" name="name" id="name_2" placeholder="Введите Ваше имя">
+                            </li>
+                            <li class="tools__name-wrap-item">
+                                <label class="tools__name-label" for="name_3">Отчество:</label>
+                                <input class="tools__name-input"  type="text" name="father" id="name_3" placeholder="Отчество, если желаете ">
+                            </li>
+                    </ul>  
+                </div>
+                <div class="tools__contact-wrap">
+                    <ul class="tools tools__contact">
+                            <li class="tools__name-wrap-item tools__name-wrap-item__tel" >
+                                <label class="tools__title tools__title__tel ">Тел</label>
+                                <input class="tools__contact-item " type="tel" name="tel" id="tele" placeholder="+7 XXX XX XX">     
+                            </li>
+                            <li class="tools__name-wrap-item tools__name-wrap-item__mail">
+                            <label class="tools__title tools__title__line tools__title__mail ">E-mail</label>
+                            <input class="tools__contact-item" type="email" name="mail" id="email" placeholder="Ваш e-mail">        
+                            </li>
+                    </ul>              
+                </div>
+
+                <div class="tools tools__reviews">
+                    <h3 class="tools__title tools__title__reviews">Доп</h3>
+                    <textarea class="tools__add-text" name="text" id="" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                    <button class="tools__btn btn-hover" type="submit">Отправить заказ</button>
+                    <span class="tools__reviews-text hidden-m">Все поля являются обязательными</span>
+                </div>
+
+            </form>
+        </section> 
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__logo hidden-m"></div>
+        <div class="footer__social container">
+            <div class="svg-insta "></div>
+            <div class="svg-fb "></div>
+            <div class="svg-twitter"></div>
+        </div>
+    
+        <div class="footer__html">
+            <span>Разработано</span>
+        </div>
+    
+    
+    </footer>
+
+
+
+
+
+
+
+    <script src="js/scripts.min.js"></script>
+    <!-- 
+
+	<script src="js/scripts.min.js"></script> -->
+    <!--    Google Analytics: change UA-XXXXX-Y to be your site's ID.  -->
+    <!-- <script>
+		window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+		ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+	</script>
+	<script src="https://www.google-analytics.com/analytics.js" async defer></script> -->
+</body>
+
+</html>
